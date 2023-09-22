@@ -1,0 +1,145 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#check
+{
+	display: none;
+}
+label #btn,
+label #cancle
+{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	color: #fff;
+	border-radius: 3px;
+}
+label #btn
+{
+	left: 40px;
+	top: 25px;
+	font-size: 65px;
+	color: #fff;
+	padding: 6px 12px;
+	transition: all 0.5s;
+}
+#cancle
+{
+	z-index: 1111;
+	left: -195px;
+	top: 17px;
+	font-size: 60px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all 0.5s;
+}
+.sidebar
+{
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+	transition: all 0.5 ease;
+}
+#check:checked ~ .sidebar
+{
+	left: 0;
+}
+#check:checked ~ label #btn
+{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none; }
+#check:checked ~ label #cancle
+{
+	left: 245px;
+	
+}
+#check:checked ~ section
+{
+	margin-left:250px;
+}
+.sidebar header img
+{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;	
+}
+.sidebar header
+{
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	margin-top: -124px;
+	background:#063146;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	user-select: none;
+}
+.sidebar ul a
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 70px;
+	font-size: 30px;
+	color: #fff;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid black;
+	transition: 0.4s;
+	text-decoration: none;
+
+}
+.sidebar li ul i a
+{
+	margin: 5%;
+}
+ul li:hover a
+{
+	color: brown;
+	padding-left: 50px;
+}
+.top
+{
+	border:1px solid #000702;
+	background-color: #000702;
+	height: 100px;
+	width: 100%;
+}
+.logout_btn 
+{
+	font-family: geneva;
+	padding: 5px;
+	background: #a06406;
+	float: right;
+	margin-top: -70px;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 25px;
+	font-weight: 600;
+	color:#fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+.logout_btn:
+{
+	background: #000702;
+}
+.toptext
+{
+	font-family: algerian;
+	text-align: center;
+	font-size: 60px;
+	color: #b5a248;
+	margin-top: 20px;
+	text-shadow:  2px 2px #a06406,  3px 3px white,  4px 4px #b5a248;
+}
+.toptext:hover
+{
+	color: #a06406;
+}
